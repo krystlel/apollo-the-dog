@@ -14,23 +14,16 @@ interface StepsFormStateType {
   suburbForm: StepFormStateType;
 }
 
+const initialFormState: StepFormStateType = {
+  completed: false,
+  touched: false,
+}
+
 const initialStepsFormState: StepsFormStateType = {
-  locationForm: {
-    completed: false,
-    touched: false,
-  },
-  bestFriendForm: {
-    completed: false,
-    touched: false
-  },
-  lastOwnerForm: {
-    completed: false,
-    touched: false
-  },
-  suburbForm: {
-    completed: false,
-    touched: false
-  }
+  locationForm: initialFormState,
+  bestFriendForm: initialFormState,
+  lastOwnerForm: initialFormState,
+  suburbForm: initialFormState
 }
 
 const useStepWizard = () => {
