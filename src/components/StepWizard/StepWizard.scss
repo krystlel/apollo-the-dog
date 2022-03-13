@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .page-content {
   padding: 20px;
 
@@ -31,7 +33,7 @@
           border-left: 1px solid var(--color--unavailable);
           min-height: 18px;
           margin-top: 2px;
-          margin-left: $icon-radius / 2;
+          margin-left: math.div($icon-radius, 2);
         }
 
         &.list-item-available:after {

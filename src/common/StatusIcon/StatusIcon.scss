@@ -1,3 +1,5 @@
+@use "sass:math";
+
 $icon-radius: 32px;
 
 :root {
@@ -64,5 +66,5 @@ $icon-radius: 32px;
   $small-dot-icon-radius: 24px;
   @include css-circle($small-dot-icon-radius);
   background: var(--color--unavailable);
-  margin: ($icon-radius - $small-dot-icon-radius) / 2;
+  margin: math.div($icon-radius - $small-dot-icon-radius, 2);
 }

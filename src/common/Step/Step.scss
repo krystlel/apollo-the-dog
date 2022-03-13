@@ -1,13 +1,12 @@
 .step-item {
   .step-tooltip {
-    margin-left: -2000px;
+    margin-left: -2000px; // so that only the icon can be hovered on
     opacity: 0;
     transition: opacity 200ms;
   }
 
-
   &:hover {
-    cursor: pointer;
+    cursor: pointer; // Hover styles could be improved to have a larger click area
 
     .step-tooltip {
       margin-left: 0;
