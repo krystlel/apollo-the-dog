@@ -1,0 +1,33 @@
+.tooltipContainer {
+  position: absolute;
+
+  .tooltip {
+    $arrow-background: #88b7d5;
+    $arrow-size: 5px;
+
+    display: inline-block;
+    font-size: 14px;
+    position: relative;
+    top: -22px;
+    left: 20px;
+    background: $arrow-background;
+    padding: 5px 10px;
+    border-radius: 2px;
+    color: white;
+
+    &:after {
+      right: 100%;
+      top: 50%;
+      border: solid transparent;
+      content: "";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(136, 183, 213, 0);
+      border-right-color: $arrow-background;
+      border-width: $arrow-size;
+      margin-top: -($arrow-size);
+    }
+  }
+}

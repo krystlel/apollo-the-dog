@@ -1,0 +1,23 @@
+.step-item {
+  .step-tooltip {
+    margin-left: -2000px;
+    opacity: 0;
+    transition: opacity 200ms;
+  }
+
+
+  &:hover {
+    cursor: pointer;
+
+    .step-tooltip {
+      margin-left: 0;
+      width: auto;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &.disabled:hover {
+    cursor: not-allowed;
+  }
+}
